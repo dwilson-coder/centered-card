@@ -6,22 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Centered Card</title>
     <style>
-      h3 {
+      /* This centers your H1, and H3 tags */
+      .header {
         text-align: center;
       }
+      /* Add a pink border to the entire card */
       .border {
         max-width: 430px;
         display: flex;
         flex-direction: column;
         padding: 20px;
         border: 5px solid #d55586;
+
+        /* adds rounded edge to your card */
+        border-radius: 5px;
+      }
+
+      /* adds rounded edge to your image */
+      .border img {
+        border-radius: 5px;
+      }
+
+      /* Adds a grey border to your image */
+      .img-border {
+        border: 2px solid #ccc;
       }
     </style>
   </head>
   <body>
     <div class="border">
-      <h3>MY BORDER</h3>
-      <img src="bear1.jpg" alt="image" />
+      <div class="header">
+        <h3>Beautiful Mourning Dove</h3>
+        <h2>(Zenaida Macroura)</h2>
+      </div>
+      <img src="bear1.jpg" alt="image" class="img-border" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aspernatur.
         Explicabo, ex vitae, ducimus facere fuga aliquid minima voluptatibus
